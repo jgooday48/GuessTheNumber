@@ -6,15 +6,15 @@ const prompt = require('prompt-sync')()
 function game() {
  
     let turns = 0 // initialiser
-    const maxTries = 3 // can be changed
-    const computerNum= Math.floor(Math.random()*10) + 1 //computers number
+    const maxTries = 15 // can be changed
+    const computerNum= Math.floor(Math.random()*100) + 1 //computers number
     console.log("Welcome to the number guessing game")
     console.log('') // allows readable gaps in console
     console.log("You have 3 attempts to guess the computers number")
 
     while (turns < maxTries){ // starts the game 
 
-        const userNum = Number(prompt('Guess a number between 1 and 10: '))
+        const userNum = Number(prompt('Guess a number between 1 and 100: '))
         console.log('') 
         console.log(`You picked ${userNum}`)
         console.log('')
