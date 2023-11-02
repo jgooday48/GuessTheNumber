@@ -23,11 +23,11 @@ function game() {
             console.log('congrats! You have correctly guesses the number.')
             break
         }
-        if (turns < maxTries) { // allows another attempt
+        else if (turns < maxTries) { // allows another attempt
             console.log(`Incorrect, try again. You have ${maxTries-turns} attempts left`)
              
         }
-        if (turns === maxTries-1) { // allows one more attempt
+        else if (turns === maxTries-1) { // allows one more attempt
             console.log('Incorrect, you have 1 attempt left')
         }
         else { // if user failed to guess
