@@ -1,49 +1,46 @@
+// imports
 const c = require('ansi-colors')
 const prompt = require('prompt-sync')()
 
-let counterUser = 0
 
-function game(userNum,computerNum) {
-    if (userNum===computerNum) {
-        return 'Correct!'
-    }
+function game() {
+ 
+    let turns = 0
+    const maxTries = 3
+    const computerNum= Math.floor(Math.random()*10) + 1
+    console.log("Welcome to the number guessing game")
+    console.log("You have 3 attempts to guess the computers number")
 
-    else if (userNum> computerNum) {
-        return 'Too high'
-    }
+    while (turns < maxTries){ // starts the game 
 
-    else if (userNum<computerNum) {
-        return 'too low'
-    }
-
-    else if (userNum===0) {
-        return 'exiting the game'
-    }
-}
-
-
-function start() {
-    let play = true
-    while (play) {
-
-        const userNu = Number(prompt('Guess a number between 1 and 10: '))
-        const computerNu= Math.floor(Math.random()*10) + 1
+        const userNum = Number(prompt('Guess a number between 1 and 10: '))
+        console.log('') // alows readable gaps in console
+        console.log(`You picked ${userNum}`)
         console.log('')
+        turns ++ // adds 1 to turns
 
-        console.log(`You picked ${userNu}`)
-        console.log('')
-
-        console.log(game(userNu,computerNu))
-        console.log('')
+        if (userNum === computerNum) { // ends game 
+            console.log('congrats! You have correctly guesses the number.')
+            break
+        }
+        if (turns < maxTries) { // allows another attempt
+            console.log(`Incorrect, try again. You have ${maxTries-turns} attempts left`)
+             
+        }
+        if (turns === maxTries-1) { // allows one more attempt
+            console.log('Incorrect, you have 1 attempt left')
+        }
+        else { // if user failed to guess
+            
+           console.log(`Computers number was ${computerNum}`)
+           break
+        }
+        }
         
-        if (userNu === 0) { //exit game
-            play = false
-            }
-            else if (userNu!==0){ //continue game
-                play =true
-    
-            }} 
+
+
+     
     }
 
 
-    start()
+game()
