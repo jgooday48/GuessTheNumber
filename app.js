@@ -28,11 +28,13 @@ function start() {
 
         const userNu = Number(prompt('Guess a number between 1 and 10: '))
         const computerNu= Math.floor(Math.random()*10) + 1
+        console.log('')
 
         console.log(`You picked ${userNu}`)
+        console.log('')
 
         console.log(game(userNu,computerNu))
-
+        console.log('')
         
         if (userNu === 0) { //exit game
             play = false
