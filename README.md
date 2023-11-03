@@ -4,7 +4,7 @@
 There is a simple game Guess a number. 
 
 ## Instalation 
-1. Clone the projact to your computer  using this link: git@github.com:jgooday48/GuessTheNumber.git
+1. Clone the project to your computer  using this link: git@github.com:jgooday48/GuessTheNumber.git
 2. Switch to the branch appT
 3. Open it in VScode
 4. Open a terminal 
