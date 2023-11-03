@@ -27,6 +27,7 @@ function mainGame(computerNum){
     const userNum = Number(prompt('Guess a number between 1 and 10: '))
     console.log('')
     console.log(`You picked ${userNum}`)
+    // console.log(`computer number is ${computerNum}`)
 
     if (userNum === computerNum) { // ends game 
         console.log(c.red('Congrats! You have correctly guesses the number.'))
