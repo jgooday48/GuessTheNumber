@@ -21,17 +21,21 @@ function game() {
         turns ++ // adds 1 to turns
 
         if (userNum === computerNum) { // ends game if num is correct
-            console.log('congrats! You have correctly guesses the number.')
+            console.log('congrats! You have correctly guessed the number.')
             break
         }
 
-        else if (turns < maxTries) { // allows another attempt
-            console.log(`Incorrect, try again. You have ${maxTries-turns} attempts left`)
-             
+        if (userNum=== computerNum+10 || userNum=== computerNum-10 ) { //clue
+            console.log('Very warm')
         }
 
-        else if (turns === maxTries-1) { // allows one more attempt
-            console.log('Incorrect, you have 1 attempt left')
+        if (userNum=== computerNum+20 || userNum=== computerNum-20 ) { // clue
+            console.log('Getting warmer')
+        }
+
+        if (turns < maxTries) { // allows another attempt
+            console.log(`Incorrect, try again. You have ${maxTries-turns} attempts left`)
+             
         }
 
         else { // if user failed to guess
@@ -40,10 +44,7 @@ function game() {
            break
         }
     }
-        
-
-
-     
+            
 }
 
 
