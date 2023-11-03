@@ -8,7 +8,7 @@
 4. Enjoy the game!
 
 ## 1-10
-- This branch contains the guess 1-10 game
+- This branch contains the guess 1-10 game (this version is on the main branch)
 - You have 3 chances to guess the number
 
 ## 1-100
