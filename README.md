@@ -13,7 +13,9 @@
 
 ## 1-100
 - This branch contains the guess 1-100 game
-- Similar to the 1-10 game, you have 3 chances to guess the correct number
+- You have 15 chances tp guess the correct number
+- If your input is +-10 of the computers number, 'Very warm' is outputted as a clue
+- If your input is +-20 of the computers number, 'Getting warmer' is outputted as a clue
 
 ## appT
 - This branch includes the game, but where you can guess the number as many times as you want until you get the correct answer
