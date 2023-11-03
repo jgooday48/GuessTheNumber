@@ -2,15 +2,15 @@
 const c = require('ansi-colors')
 const prompt = require('prompt-sync')()
 
-
 function game() {
  
     let turns = 0 // initialiser
     const maxTries = 15 // can be changed
     const computerNum= Math.floor(Math.random()*100) + 1 //computers number
+
     console.log("Welcome to the number guessing game")
     console.log('') // allows readable gaps in console
-    console.log("You have 3 attempts to guess the computers number")
+    console.log("You have 15 attempts to guess the computers number")
 
     while (turns < maxTries){ // starts the game 
 
@@ -29,20 +29,22 @@ function game() {
             console.log(`Incorrect, try again. You have ${maxTries-turns} attempts left`)
              
         }
+
         else if (turns === maxTries-1) { // allows one more attempt
             console.log('Incorrect, you have 1 attempt left')
         }
+
         else { // if user failed to guess
             
            console.log(`Computers number was ${computerNum}`)
            break
         }
-        }
+    }
         
 
 
      
-    }
+}
 
 
 game()
