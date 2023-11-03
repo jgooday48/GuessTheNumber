@@ -8,7 +8,7 @@
 4. Enjoy the game!
 
 ## 1-10
-- This branch contains the guess 1-10 game
+- This branch contains the guess 1-10 game (this version is on the main branch)
 - You have 3 chances to guess the number
 
 ## 1-100
@@ -16,4 +16,5 @@
 - Similar to the 1-10 game, you have 3 chances to guess the correct number
 
 ## appT
-- This branch includes the game, but where you can guess the number as many times as you want until you get the correct answer.
+- This branch includes the game, but where you can guess the number as many times as you want until you get the correct answer
+- Unlike the other versions, once the game has ended, it will prompt you to type 'y' or 'n' if you want to play again or exit
