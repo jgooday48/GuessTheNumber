@@ -1,7 +1,7 @@
 # hackathon_lap1
 
 ## Instruction for all games
-- To run each game:
+ To run each game:
 1. git switch (branch name) into the game you wish to play 
 2. Run npm install in the console
 3. In the console run node app.js
